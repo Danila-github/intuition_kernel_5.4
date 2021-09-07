@@ -498,6 +498,12 @@
 	/* On Low speed expansion */
 	label = "LS-SPI0";
 	status = "okay";
+
+	spidev_ndp101@0 {
+		compatible = "intuition,ndp101";
+		spi-max-frequency = <2000000>;
+		reg = <0>;
+	};
 };
 
 &mdss {
